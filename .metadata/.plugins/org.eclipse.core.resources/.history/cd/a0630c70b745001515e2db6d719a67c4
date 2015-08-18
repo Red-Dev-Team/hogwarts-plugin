@@ -37,9 +37,6 @@ public class Pigwarts extends JavaPlugin {
 	    	
 	    	// Plugin's first run initialization
 	    	{
-	    		//plugin will run off of scoreboards
-	    		// time online will count time online
-	    		// has recieved message will make it so players wont recieve messages twice.  1= true 0= false
 	    		hasRecivedMessage = board.registerNewObjective("pigwarts_hasRecievedMessage", "dummy");
 	    		timeOnline = board.registerNewObjective("pigwarts_timeOnline", "stat.playOneMinute");
 	    	}
@@ -81,21 +78,11 @@ public class Pigwarts extends JavaPlugin {
     	if (cmd.getName().equalsIgnoreCase("pigwarts")) {
     		
     		if (args[0].equalsIgnoreCase("reset")) {
-    			if (args[1].equalsIgnoreCase("y")) {
-    				// resets initialization
-        			File f = new File(getDataFolder() + "/");
-        			File fInit = new File(getDataFolder() + "/fInit.fak");
-        			fInit.delete();
-        			f.delete();
-        			timeOnline.unregister();
-        			hasRecivedMessage.unregister();
-        			
-        			getServer().shutdown();
-    			} else {
-    				sender.sendMessage("Warning: Will stop the server. To Continue do /pigwarts reset y");
-    			}
-    			
-    			
+    			File f = new File(getDataFolder() + "/");
+    			File fInit = new File(getDataFolder() + "/fInit.fak");
+    			fInit.delete();
+    			timeOnline.unregister();
+    			hasRecivedMessage.unregister();
     		}
     		
     		return true;
