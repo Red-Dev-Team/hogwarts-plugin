@@ -1,0 +1,26 @@
+package io.github.reddevteam.pigwarts;
+
+import org.bukkit.plugin.java.JavaPlugin;
+
+/*
+ * Main Class for pigwarts plugin.
+ * Created 2015 By Zacklukem
+ */
+
+public class Pigwarts extends JavaPlugin {
+	
+	/* @Override means that the superclass's function 
+	 * will be replaced with the contents of these functions 
+	 * and called when the functions in the superclass are called
+	 */
+	@Override
+    public void onEnable() {
+        // TODO Insert logic to be performed when the plugin is enabled
+		getLogger().info("");
+    }
+	
+    @Override
+    public void onDisable() {
+        // TODO Insert logic to be performed when the plugin is disabled
+    }
+}

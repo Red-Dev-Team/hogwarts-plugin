@@ -1,0 +1,12 @@
+package io.github.reddevteam.pigwarts;
+
+import org.bukkit.plugin.java.JavaPlugin;
+
+/*
+ * Main Class for pigwarts plugin.
+ * Created 2015 By Zacklukem
+ */
+
+public class Pigwarts extends JavaPlugin {
+	
+}
