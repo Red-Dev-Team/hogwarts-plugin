@@ -1,0 +1,12 @@
+package io.github.zacklukem.clock;
+
+public class Timer {
+	
+	public void startTimer() {
+		
+	}
+	
+	public void getTime() {
+		
+	}
+}

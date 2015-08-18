@@ -1,0 +1,7 @@
+name: MyFirstPlugin
+main: io.github.reddevteam.pigwarts.Pigwarts
+version: 0.1
+commands:
+   pigwarts:
+      description: does nothing for now
+      usage: /<command>

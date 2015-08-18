@@ -1,0 +1,42 @@
+package io.github.reddevteam.pigwarts;
+
+import java.io.File;
+
+import org.bukkit.command.CommandSender;
+import org.bukkit.command.Command;
+import org.bukkit.entity.Player;
+import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class Pigwarts extends JavaPlugin {
+	
+	@Override
+    public void onEnable() {
+		JavaPlugin plugin = new JavaPlugin() {
+		};
+		// TODO Insert logic to be performed when the plugin is enabled
+		File f = new File(plugin.getDataFolder() + "/");
+		if(!f.exists()) {
+		    f.mkdir();
+		    File fInit = new File(plugin.getDataFolder() + "/fInit.fak");
+		}
+		getLogger().info("Pigwarts has initialized!");
+    }
+ 
+    @Override
+    public void onDisable() {
+        // TODO Insert logic to be performed when the plugin is disabled
+    	getLogger().info("Pigwarts: goodbye!");
+    }
+    
+    @Override
+    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+    	if (cmd.getName().equalsIgnoreCase("pigwarts")) {
+    		sender.sendMessage("Running Pigwarts");
+    		
+    		return true;
+    	}
+    	return false;
+    }
+	
+}
