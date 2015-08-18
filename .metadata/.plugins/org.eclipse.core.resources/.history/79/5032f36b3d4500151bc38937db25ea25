@@ -1,7 +1,0 @@
-package io.github.reddevteam.pigwarts;
-
-import org.bukkit.plugin.java.JavaPlugin;
-
-public class Pigwarts extends JavaPlugin {
-
-}

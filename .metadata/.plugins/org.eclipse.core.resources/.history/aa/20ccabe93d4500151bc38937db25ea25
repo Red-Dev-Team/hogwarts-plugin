@@ -1,3 +1,0 @@
-name: Pigwarts
-main: io.github.reddevteam.pigwarts.Pigwarts.java
-version: {$VersionNumber}
